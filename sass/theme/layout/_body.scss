@@ -1,0 +1,30 @@
+// Body
+
+body {
+	height: 100%;
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+
+	.site {
+		min-height: 100vh;
+		overflow: hidden;
+		display: block;
+		position: relative;
+		padding-bottom: 84px;
+	}
+
+	h1,h2,h3,h4 {
+		margin-bottom: 1rem;
+		font-weight: 300;
+	}
+
+	a {
+		transition: 0.2s;
+	}
+
+	.entry-content {
+		p, ul, ol, blockquote {
+			font-size: 1.1rem;
+		}
+	}
+}

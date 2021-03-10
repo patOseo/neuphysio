@@ -1,0 +1,24 @@
+.page-header {
+	position: relative;
+    padding: 7rem 0;
+    color: #fff;
+    text-align: center;
+
+    &:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #fff;
+		background-blend-mode: multiply,luminosity;
+		background-repeat: no-repeat;
+		background-size: cover;
+		z-index: -1;
+    }
+
+    h1 {
+    	font-size: 3rem;
+    }
+}

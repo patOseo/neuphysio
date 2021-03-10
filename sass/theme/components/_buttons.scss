@@ -1,0 +1,12 @@
+// Buttons
+.btn {
+	letter-spacing: 2;
+}
+
+.btn-secondary {
+	color: $white;
+
+	&:hover {
+		color: $white;
+	}
+}

@@ -1,0 +1,68 @@
+// Header
+
+.top-bar {
+	padding: .5rem 0;
+	color: #fff;
+	text-align: right;
+
+	.contact-links {
+		display: inline;
+	}
+
+	.social-links {
+		display: inline;
+		text-align: right;
+		font-size: 1.25rem;
+
+		a {
+			margin-left: 1rem;
+		}
+	}
+
+	a {
+		color: $white;
+	}
+}
+
+.navbar-expand-md .navbar-nav {
+	.nav-link {
+		padding-left: .65rem;
+		padding-right: .65rem;
+		font-size: 1.15rem;
+
+		&:last-child {
+			border-radius: 6px;
+			background: $primary;
+			color: $white;
+		}
+
+		&:hover {
+			&:last-child {
+				background: darken($primary, 5%);
+			}
+		}
+	}
+
+	.dropdown-item {
+		&:hover {
+			background: $primary;
+			color: $white;
+		}
+	}
+
+	@include media-breakpoint-down(md) {
+		text-align: center;
+	}
+
+	.dropdown-menu {
+		@include media-breakpoint-down(md) {
+			text-align: center;
+		}
+	}
+}
+
+.navbar-brand {
+	@include media-breakpoint-down(md) {
+		max-width: 260px;
+	}
+}

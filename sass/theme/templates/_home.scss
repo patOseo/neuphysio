@@ -1,0 +1,260 @@
+// Home
+
+.home-hero {
+	padding: 6rem 0;
+	background-image: url('/wp-content/themes/neuphysio/images/home-bg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	min-height: 400px;
+	color: $white;
+
+	h1 {
+		margin-bottom: 1.5rem;
+		font-size: 3.5rem;
+		font-weight: 300;
+
+		img {
+			position: relative;
+			top: -8px;
+			max-height: 46px;
+		}
+	}
+
+	h2 {
+		margin-bottom: 1.5rem;
+		font-size: 1.6rem;
+	}
+
+	.btn {
+		margin-bottom: 2rem;
+	}
+
+	.hours-box {
+		padding: 2rem;
+		border-radius: 8px;
+		background: rgba(255,255,255,.7);
+		font-size: 1.25rem;
+		text-align: center;
+		img {
+			margin-bottom: 2rem;
+		}
+		.hours-heading {
+			width: 100%;
+			text-align: center;
+			font-size: 1.5rem;
+
+		}
+		table {
+			width: 100%;
+			tr {
+				&:not(:first-child) {
+					border-top: 1px solid $white;
+					border-bottom: 1px solid $white;
+				}
+				td {
+					padding: .5rem 0;
+					&:last-child {
+						text-align: right;
+					}
+				}
+
+				
+			}
+		}
+	}
+}
+
+.statement {
+	padding: 2rem 1rem;
+	text-align:center;
+	background: #213f5b;
+	color: $white;
+
+	h2 {
+		margin-bottom: 0;
+		font-size: 1.75rem;
+	}
+}
+
+.locations {
+	padding: 4rem 0 0 0;
+	text-align: center;
+
+	a {
+		&:hover {
+			text-decoration: none;
+		}
+	}
+	
+	.location-block {
+		margin: 0 auto 2rem 0;
+		padding: 2rem;
+		border-radius: 8px;
+		text-align: center;
+		background: $faded;
+		transition: .3s;
+
+		img {
+			margin: 0 auto;
+		}
+
+		a {
+			&:hover {
+				text-decoration: none;
+			}
+		}
+
+		&:hover {
+			box-shadow: 0 0 16px -6px $primary;
+		}
+
+		h2 {
+			font-weight: 300;
+		}
+
+		hr.divider {
+			border-width: 1px;
+			border-color: rgba(33,78,119,0.1);
+		}
+
+		&.neufit-block {
+			text-align: left;
+			background: transparent;
+			
+			&:hover {
+				text-decoration: none;
+			}
+
+			.neufit-info {
+				text-align: center;
+			}
+		}
+
+		&.tgr-block {
+			background: transparent;
+			
+			&:hover {
+				text-decoration: none;
+				box-shadow: 0 0 16px -6px $green;
+			}
+		
+			h2 {
+				font-weight: 300;
+			}
+		}
+	}
+}
+
+.location-social-link {
+	font-size: 1.25rem;
+    color: $white;
+    background: #7e7e7e;
+    padding: .5rem;
+    border-radius: 50%;
+    width: 46px;
+    display: inline-block;
+    text-align: center;
+    transition: .2s;
+
+    i {
+    	width: 20px;
+    	text-align: center;
+    }
+
+    &:hover {
+    	background: darken(#7e7e7e, 10%);
+    }
+}
+
+.therapy-services {
+	padding: 2rem 0 4rem 0;
+	text-align: center;
+
+	h2 {
+		margin-bottom: 2rem;
+	}
+
+	.service-box {
+		position: relative;
+		margin-bottom: 2rem;
+		box-shadow: 1px 5px 20px -6px rgba(97,96,96,.25);
+		overflow: hidden;
+		transition: 0.3s;
+
+		img {
+			width: 100%;
+			transition: 0.3s;
+		}
+
+
+		h3 {
+			position: absolute;
+			bottom: 0;
+			margin-bottom: 0;
+			padding: .5rem 1rem;
+			background: rgba(255,255,255,.8);
+			width: 100%;
+			font-size: 1.5rem;
+			color: $primary;
+			transition: 0.3s;
+		}
+
+		&:hover {
+			cursor: pointer; 
+			box-shadow: 1px 5px 20px -6px rgba(33, 78, 119,.75);
+
+			img {
+				transform: scale(1.05);
+			}
+
+			h3 {
+				background: rgba(255,255,255,.95)
+			}
+		}
+	}
+}
+
+.who-we-help {
+	padding: 0 0 4rem 0;
+	text-align: center;
+
+	h2 {
+		margin-bottom: 2rem;
+	}
+
+	.help {
+		margin-bottom: 1rem;
+
+		a {
+			&:hover {
+				text-decoration: none;
+			}
+		}
+		
+		h4 {
+			margin-bottom: 0;
+			padding: .5rem;
+		    border: 1px solid #d3d7da;
+    		border-radius: 8px;
+    		transition: 0.2s;
+
+    		@include media-breakpoint-down(md) {
+    			font-size: 1.2rem;
+    		}
+		
+    		&:hover {
+				cursor: pointer;
+				box-shadow: 1px 5px 20px -6px rgba(33, 78, 119,.5);
+			}
+		}
+
+		
+	}
+}
+
+.companies {
+	padding: 1rem 0;
+	background: $primary;
+}
+

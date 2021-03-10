@@ -1,0 +1,48 @@
+// Divider
+
+hr.divider {
+	margin: 1rem 0;
+	border-width: 4px;
+	border-color: $primary;
+
+	&.short {
+		max-width: 60px;
+	}
+
+	&.medium {
+		max-width: 120px;
+	}
+
+	&.long {
+		width: 100%;
+	}
+
+	&.thin {
+		border-width: 1px;
+		border-color: rgba(33,78,119,0.1);
+	}
+
+	&.thick {
+		border-width: 4px;
+	}
+
+	&.blue {
+		border-color: $primary;
+	}
+
+	&.grey {
+		border-color: rgba(33,78,119,0.1);
+	}
+
+	&.green {
+		border-color: #b0b821;
+	}
+
+	&.center {
+		margin: 1rem auto;
+	}
+
+	&.right {
+		margin: 1rem 0 1rem auto;
+	}
+}

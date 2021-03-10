@@ -1,0 +1,29 @@
+// FAQ
+
+#faqSection {
+	.card {
+		margin-bottom: 1rem;
+	}
+}
+
+// Accordion
+#accordion {
+	margin-bottom: 2rem;
+	.card {
+		margin-bottom: .5rem;
+	}
+	.card-header {
+		&.shadowbox {
+			padding: 1em;
+		}
+
+		button {
+			&:focus {
+				box-shadow: none !important;
+			}
+		}
+		.fa {
+			margin-right: 1rem;
+		}
+	}
+}

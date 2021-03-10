@@ -1,0 +1,10 @@
+// Footer
+
+footer.site-footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background-color: darken($primary, 20%);
+	text-align: center;
+	color: $white;
+}
