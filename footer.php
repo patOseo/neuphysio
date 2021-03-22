@@ -28,7 +28,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	
 						<div class="site-info">
 	
-							© <?php the_date('Y'); ?> Neuphysio Rehabilitation | All Rights Reserved
+							© <?php echo date('Y'); ?> Neuphysio Rehabilitation | All Rights Reserved
 	
 						</div><!-- .site-info -->
 	
