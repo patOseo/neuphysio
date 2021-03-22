@@ -12093,6 +12093,18 @@ footer.site-footer {
   padding: 1rem 0;
   background: #214e77; }
 
+.wp-block-columns.has-white-color a {
+  color: #cca675; }
+
+.wp-block-pullquote {
+  margin: 4rem 0;
+  border-top: 2px solid #214e77;
+  border-bottom: 2px solid #214e77; }
+  .wp-block-pullquote blockquote p {
+    font-size: 1.75rem;
+    font-weight: 300;
+    color: #214e77; }
+
 .btn,
 .wpcf7 input[type=submit] {
   letter-spacing: 2; }

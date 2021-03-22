@@ -1,0 +1,22 @@
+.wp-block-columns {
+	&.has-white-color {
+		a {
+			color: $secondary;
+		}
+	}
+}
+
+
+// Pullquote
+
+.wp-block-pullquote {
+	margin: 4rem 0;
+	border-top: 2px solid $primary;
+	border-bottom: 2px solid $primary;
+
+	blockquote p {
+		font-size: 1.75rem;
+		font-weight: 300;
+		color: $primary;
+	}
+}
