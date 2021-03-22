@@ -29,6 +29,18 @@ function acf_custom_blocks() {
 			'icon'				=> 'minus',
 			'keywords'			=> array( 'divider', 'line' ),
 		));
+
+		// accordion block
+		acf_register_block(array(
+			'name'				=> 'accordion',
+			'title'				=> __('Accordion'),
+			'description'		=> __('A custom block to display a FAQ-style accordion.'),
+			'mode'				=> 'edit',
+			'render_template'	=> 'global-templates/blocks/block-accordion.php',
+			'category'			=> 'oseo-blocks',
+			'icon'				=> 'excerpt-view',
+			'keywords'			=> array( 'faq', 'accordion' ),
+		));
 	}
 }
 

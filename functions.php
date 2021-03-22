@@ -33,6 +33,16 @@ function add_child_theme_textdomain() {
 }
 add_action( 'after_setup_theme', 'add_child_theme_textdomain' );
 
+// Fixing issue with Select field on admin edit page
+function my_mtsnb_force_bar_post_types() {
+  if( is_admin() ) {
+    return array();
+  }
+  return array( 'post', 'page' );
+}
+add_filter( 'mtsnb_force_bar_post_types', 'my_mtsnb_force_bar_post_types', 10, 3 );
+
+
 require_once('functions/acf.php');
 require_once('functions/admin-blocks.php');
 require_once('functions/shortcodes.php');
