@@ -29,6 +29,11 @@ if(have_rows('staff_members', 'option')): ?>
 									<div class="collapse" id="collapse<?php echo $i; ?>" aria-labelledby="heading<?php echo $i; ?>" data-parent="#accordion<?php echo $i; ?>">
 										<div class="card-body">
 											<?php the_sub_field('biography'); ?>
+											<?php if(get_sub_field('video')): ?>
+												<div class="embed-container">
+											    	<?php the_sub_field('video'); ?>
+												</div>
+											<?php endif; ?>
 										</div>
 									</div>
 								</div>
