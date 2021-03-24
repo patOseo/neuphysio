@@ -1,4 +1,3 @@
-<?php if(get_field('header_background')): ?>
 <?php $color = get_field('header_background_overlay'); ?>
 <style>
 .page-header:before {
@@ -10,5 +9,4 @@
 <div class="page-header">
 	<h1><?php the_title(); ?></h1>
 </div>
-<?php endif;
 
